@@ -18,4 +18,11 @@ docker-compose ps
 redis-cli -h 127.0.0.1 -p 6380
 docker-compose down
 docker-compose ps
+
+# Test PHP Service
+chmod +x docker/entrypoint.sh
+docker-compose up -d
+docker-compose ps
+curl 127.0.0.1:8001
+docker-compose down
 ```
