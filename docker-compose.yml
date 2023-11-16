@@ -38,6 +38,19 @@ services:
     - ./data/redis:/data
     ports:
       - 6380:6379
+  # Queue Service
+  queue:
+    build:
+      context: .
+      target: php
+      args:
+        - APP_ENV=${APP_ENV}
+    environment:
+      - APP_ENV=${APP_ENV}
+      - CONTAINER_ROLE=queue
+    working_dir: /var/www
+    volumes:
+      - ./:/var/www
   # Node Service
   node:
     build:
