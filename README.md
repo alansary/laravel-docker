@@ -30,4 +30,9 @@ docker-compose down
 docker-compose up -d
 docker-compose ps
 docker-compose down
+
+# Test Queue Service
+docker-compose up -d
+docker-compose ps
+docker-compose down
 ```
