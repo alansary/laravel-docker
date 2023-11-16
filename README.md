@@ -25,4 +25,9 @@ docker-compose up -d
 docker-compose ps
 curl 127.0.0.1:8001
 docker-compose down
+
+# Test Node Service
+docker-compose up -d
+docker-compose ps
+docker-compose down
 ```
