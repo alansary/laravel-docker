@@ -35,4 +35,10 @@ docker-compose down
 docker-compose up -d
 docker-compose ps
 docker-compose down
+
+# Test Websocket Service
+docker-compose up -d
+docker-compose ps
+docker-compose down
+# http://127.0.0.1:8001
 ```
