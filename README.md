@@ -15,5 +15,7 @@ mysql -h 127.0.0.1 -P 3307 -u root -p
 # Test Redis Service
 docker-compose up -d
 docker-compose ps
-redis-cli -h 127.0.0.1 -p 6370
+redis-cli -h 127.0.0.1 -p 6380
+docker-compose down
+docker-compose ps
 ```
